@@ -1,0 +1,14 @@
+prefix=C:/Users/zh/AppData/Local/.xmake/packages/p/proj/9.4.0/97de47e959914e9ead03bfa3d5916dc1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/proj
+
+Name: PROJ
+Description: Coordinate transformation software library
+Requires:
+Version: 9.4.0
+Libs: -L${libdir} -lproj
+Libs.private: -lole32 -lshell32
+Requires.private: sqlite3
+Cflags: -I${includedir}

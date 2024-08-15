@@ -1,0 +1,53 @@
+<RCC>
+    <qresource prefix="/YGIS">
+        <file>res/AddPoint.png</file>
+        <file>res/Circle.png</file>
+        <file>res/Clip.png</file>
+        <file>res/Curve.png</file>
+        <file>res/DeletePoint.png</file>
+        <file>res/Down_list.png</file>
+        <file>res/Ellipse.png</file>
+        <file>res/exit.png</file>
+        <file>res/Help.png</file>
+        <file>res/last.png</file>
+        <file>res/Lest_list.png</file>
+        <file>res/Line.png</file>
+        <file>res/next.png</file>
+        <file>res/Octagon.png</file>
+        <file>res/Open.png</file>
+        <file>res/Open_file.png</file>
+        <file>res/paint.png</file>
+        <file>res/Palette.png</file>
+        <file>res/Purge.png</file>
+        <file>res/Rectangle.png</file>
+        <file>res/Rotate.png</file>
+        <file>res/Save.png</file>
+        <file>res/Save_file.png</file>
+        <file>res/Translate.png</file>
+        <file>res/Trash.png</file>
+        <file>res/Triangle.png</file>
+        <file>res/ZoomIn.png</file>
+        <file>res/ZoomOut.png</file>
+        <file>res/TOOLBOX .png</file>
+        <file>res/Area.png</file>
+        <file>res/Count.png</file>
+        <file>res/huanchong.png</file>
+        <file>res/tongji.png</file>
+        <file>res/tubao.png</file>
+        <file>res/yanmo.png</file>
+        <file>res/point.png</file>
+        <file>res/TIN.png</file>
+        <file>res/bigfile.png</file>
+        <file>res/enjoy.png</file>
+        <file>res/idea.png</file>
+        <file>res/love.png</file>
+        <file>res/PostgreSQL.png</file>
+        <file>res/share.png</file>
+        <file>res/smallfile.png</file>
+        <file>res/WMS.png</file>
+        <file>res/Oracle.png</file>
+        <file>res/raster.png</file>
+        <file>res/txt.png</file>
+        <file>res/YGIS.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>YGISClass</class>
+ <widget class="QMainWindow" name="YGISClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1091</width>
+    <height>695</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>YGIS</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="YGIS.qrc">
+    <normaloff>:/YGIS/res/YGIS.ico</normaloff>:/YGIS/res/YGIS.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>505</width>
+         <height>593</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label"/>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGraphicsView" name="graphicsView"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1091</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+    <addaction name="actionSaveFile"/>
+    <addaction name="actionOpenTIF"/>
+    <addaction name="actionSaveTXT"/>
+   </widget>
+   <widget class="QMenu" name="menuwindow">
+    <property name="title">
+     <string>window</string>
+    </property>
+    <addaction name="actionShowBrowser"/>
+    <addaction name="actionShowToolBox"/>
+    <addaction name="actionShowLayer"/>
+   </widget>
+   <widget class="QMenu" name="menuexit">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionLastStep"/>
+    <addaction name="actionNextStep"/>
+    <addaction name="actionexit"/>
+   </widget>
+   <widget class="QMenu" name="menuPaint">
+    <property name="title">
+     <string>Paint</string>
+    </property>
+    <addaction name="actionStart"/>
+    <addaction name="action_addpoint"/>
+    <addaction name="action_circle"/>
+    <addaction name="action_clip"/>
+    <addaction name="action_curve"/>
+    <addaction name="action_deletepoint"/>
+    <addaction name="action_ellipse"/>
+    <addaction name="action_help"/>
+    <addaction name="action_line"/>
+    <addaction name="action_palette"/>
+    <addaction name="action_polygon"/>
+    <addaction name="action_rectangle"/>
+    <addaction name="action_rotate"/>
+    <addaction name="action_translate"/>
+    <addaction name="action_trash"/>
+    <addaction name="action_triangle"/>
+    <addaction name="action_zoomin"/>
+    <addaction name="action_zoomout"/>
+    <addaction name="action_point"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuwindow"/>
+   <addaction name="menuPaint"/>
+   <addaction name="menuexit"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenFile"/>
+   <addaction name="actionLastStep"/>
+   <addaction name="actionNextStep"/>
+   <addaction name="actionSaveFile"/>
+   <addaction name="actionexit"/>
+   <addaction name="action_point"/>
+   <addaction name="action_line"/>
+   <addaction name="action_triangle"/>
+   <addaction name="action_rectangle"/>
+   <addaction name="action_circle"/>
+   <addaction name="action_ellipse"/>
+   <addaction name="action_polygon"/>
+   <addaction name="action_curve"/>
+   <addaction name="action_translate"/>
+   <addaction name="action_rotate"/>
+   <addaction name="action_clip"/>
+   <addaction name="action_zoomin"/>
+   <addaction name="action_zoomout"/>
+   <addaction name="action_addpoint"/>
+   <addaction name="action_deletepoint"/>
+   <addaction name="action_palette"/>
+   <addaction name="action_trash"/>
+   <addaction name="action_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="Browser">
+   <property name="minimumSize">
+    <size>
+     <width>198</width>
+     <height>105</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>浏览器</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget_Browser">
+       <column>
+        <property name="text">
+         <string>Browser</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="ToolBox">
+   <property name="minimumSize">
+    <size>
+     <width>228</width>
+     <height>105</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>工具箱</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_3">
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget_toolbox">
+       <column>
+        <property name="text">
+         <string>TooL</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="Layer">
+   <property name="maximumSize">
+    <size>
+     <width>524287</width>
+     <height>382</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>图层</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget_Layer">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>377</height>
+        </size>
+       </property>
+       <column>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionOpenFile">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Open.png</normaloff>:/YGIS/res/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenFile</string>
+   </property>
+  </action>
+  <action name="actionSaveFile">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Save.png</normaloff>:/YGIS/res/Save.png</iconset>
+   </property>
+   <property name="text">
+    <string>SaveFile</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/exit.png</normaloff>:/YGIS/res/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actionShowBrowser">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/WMS.png</normaloff>:/YGIS/res/WMS.png</iconset>
+   </property>
+   <property name="text">
+    <string>Browser</string>
+   </property>
+  </action>
+  <action name="actionShowToolBox">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/TOOLBOX .png</normaloff>:/YGIS/res/TOOLBOX .png</iconset>
+   </property>
+   <property name="text">
+    <string>ToolBox</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/paint.png</normaloff>:/YGIS/res/paint.png</iconset>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionLastStep">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/last.png</normaloff>:/YGIS/res/last.png</iconset>
+   </property>
+   <property name="text">
+    <string>LastStep</string>
+   </property>
+  </action>
+  <action name="actionNextStep">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/next.png</normaloff>:/YGIS/res/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>NextStep</string>
+   </property>
+  </action>
+  <action name="actionShowLayer">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/raster.png</normaloff>:/YGIS/res/raster.png</iconset>
+   </property>
+   <property name="text">
+    <string>Layer</string>
+   </property>
+  </action>
+  <action name="action_addpoint">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/AddPoint.png</normaloff>:/YGIS/res/AddPoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_addpoint</string>
+   </property>
+  </action>
+  <action name="action_circle">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Circle.png</normaloff>:/YGIS/res/Circle.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_circle</string>
+   </property>
+  </action>
+  <action name="action_clip">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Clip.png</normaloff>:/YGIS/res/Clip.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_clip</string>
+   </property>
+  </action>
+  <action name="action_curve">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Curve.png</normaloff>:/YGIS/res/Curve.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_curve</string>
+   </property>
+  </action>
+  <action name="action_deletepoint">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/DeletePoint.png</normaloff>:/YGIS/res/DeletePoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_deletepoint</string>
+   </property>
+  </action>
+  <action name="action_ellipse">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Ellipse.png</normaloff>:/YGIS/res/Ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_ellipse</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Help.png</normaloff>:/YGIS/res/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_help</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Line.png</normaloff>:/YGIS/res/Line.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_line</string>
+   </property>
+  </action>
+  <action name="action_palette">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Palette.png</normaloff>:/YGIS/res/Palette.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_palette</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Octagon.png</normaloff>:/YGIS/res/Octagon.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_polygon</string>
+   </property>
+  </action>
+  <action name="action_rectangle">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Rectangle.png</normaloff>:/YGIS/res/Rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_rectangle</string>
+   </property>
+  </action>
+  <action name="action_rotate">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Rotate.png</normaloff>:/YGIS/res/Rotate.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_rotate</string>
+   </property>
+  </action>
+  <action name="action_translate">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Translate.png</normaloff>:/YGIS/res/Translate.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_translate</string>
+   </property>
+  </action>
+  <action name="action_trash">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Trash.png</normaloff>:/YGIS/res/Trash.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_trash</string>
+   </property>
+  </action>
+  <action name="action_triangle">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/Triangle.png</normaloff>:/YGIS/res/Triangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_triangle</string>
+   </property>
+  </action>
+  <action name="action_zoomin">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/ZoomIn.png</normaloff>:/YGIS/res/ZoomIn.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_zoomin</string>
+   </property>
+  </action>
+  <action name="action_zoomout">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/ZoomOut.png</normaloff>:/YGIS/res/ZoomOut.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_zoomout</string>
+   </property>
+  </action>
+  <action name="action_point">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/point.png</normaloff>:/YGIS/res/point.png</iconset>
+   </property>
+   <property name="text">
+    <string>action_point</string>
+   </property>
+  </action>
+  <action name="actionOpenTIF">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/raster.png</normaloff>:/YGIS/res/raster.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open TIF</string>
+   </property>
+  </action>
+  <action name="actionSaveTXT">
+   <property name="icon">
+    <iconset resource="YGIS.qrc">
+     <normaloff>:/YGIS/res/txt.png</normaloff>:/YGIS/res/txt.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save TXT</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="YGIS.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,17 @@
+CONFIG_VERSION=3.9.0
+CONFIG_INST_PREFIX=C:/Users/zh/AppData/Local/.xmake/packages/g/gdal/3.9.0/d8c0f952965d42f1ba142bf0d264197f
+CONFIG_INST_LIBS=-LIBPATH:C:/Users/zh/AppData/Local/.xmake/packages/g/gdal/3.9.0/d8c0f952965d42f1ba142bf0d264197f/lib gdal wbemuuid ws2_32 C:/Users/zh/AppData/Local/.xmake/packages/o/openjpeg/v2.5.0/a9dac73e33c94b3ca6b24a4ec0b7cf0a/lib/openjp2.lib psapi C:/Users/zh/AppData/Local/.xmake/packages/p/proj/9.4.0/97de47e959914e9ead03bfa3d5916dc1/lib/proj.lib shell32.lib ole32.lib C:/Users/zh/AppData/Local/.xmake/packages/s/sqlite3/3.46.0+0/4cd74f593a7e4164b91853a968a42c4c/lib/sqlite3.lib
+CONFIG_INST_CFLAGS=-IC:/Users/zh/AppData/Local/.xmake/packages/g/gdal/3.9.0/d8c0f952965d42f1ba142bf0d264197f/include
+CONFIG_INST_DATA=C:/Users/zh/AppData/Local/.xmake/packages/g/gdal/3.9.0/d8c0f952965d42f1ba142bf0d264197f/share/gdal
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Libs.private: 
+Cflags: ${CONFIG_INST_CFLAGS}

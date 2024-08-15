@@ -1,0 +1,4 @@
+{
+    ["D:\\git\\xmake\\test1"] = "240614",
+    ["D:\\git\\xmake\\testconsole"] = "240614"
+}

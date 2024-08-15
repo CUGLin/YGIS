@@ -1,0 +1,99 @@
+{
+    arch = "x64",
+    artifacts = {
+        installdir = [[C:\Users\zh\AppData\Local\.xmake\packages\g\gdal\3.9.0\d8c0f952965d42f1ba142bf0d264197f]]
+    },
+    configs = {
+        apps = false,
+        curl = false,
+        debug = false,
+        geos = false,
+        gif = false,
+        iconv = false,
+        jpeg = false,
+        openjpeg = true,
+        openssl = false,
+        pic = true,
+        png = false,
+        runtimes = "MD",
+        shared = false,
+        sqlite3 = false,
+        xercesc = false
+    },
+    deps = {
+        lcms = {
+            buildhash = "84b1874651e9485885c172f1041dafe2",
+            version = "2.12"
+        },
+        libpng = {
+            buildhash = "5a2ddf22040e42528857e47c7a3c9ff6",
+            version = "v1.6.43"
+        },
+        libtiff = {
+            buildhash = "21d3708f59cc4b268b43289b671827a0",
+            version = "v4.6.0"
+        },
+        nlohmann_json = {
+            buildhash = "a4f663343367448bb1204634e4d486e7",
+            version = "v3.11.3"
+        },
+        openjpeg = {
+            buildhash = "a9dac73e33c94b3ca6b24a4ec0b7cf0a",
+            version = "v2.5.0"
+        },
+        proj = {
+            buildhash = "97de47e959914e9ead03bfa3d5916dc1",
+            version = "9.4.0"
+        },
+        sqlite3 = {
+            buildhash = "4cd74f593a7e4164b91853a968a42c4c",
+            version = "3.46.0+0"
+        },
+        zlib = {
+            buildhash = "95786712bac941e795afa187a68143a4",
+            version = "v1.3.1"
+        }
+    },
+    description = "GDAL is a translator library for raster and vector geospatial data formats by the Open Source Geospatial Foundation",
+    envs = {
+        PATH = {
+            "bin"
+        }
+    },
+    librarydeps = {
+        "proj",
+        "sqlite3",
+        "nlohmann_json",
+        "openjpeg",
+        "lcms",
+        "libtiff",
+        "libpng",
+        "zlib"
+    },
+    license = "MIT",
+    mode = "release",
+    name = "gdal",
+    pathenvs = {
+        "PYTHONPATH",
+        "DYLD_LIBRARY_PATH",
+        "CMAKE_PREFIX_PATH",
+        "PATH",
+        "PKG_CONFIG_PATH",
+        "LD_LIBRARY_PATH",
+        "ACLOCAL_PATH"
+    },
+    plat = "windows",
+    repo = {
+        branch = "master",
+        commit = "7c3c922d9978d28e02ca093bc5804af359736341",
+        name = "xmake-repo",
+        url = "https://gitee.com/tboox/xmake-repo.git"
+    },
+    vars = {
+        syslinks = {
+            "wsock32",
+            "ws2_32"
+        }
+    },
+    version = "3.9.0"
+}

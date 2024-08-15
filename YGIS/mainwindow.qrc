@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>res/AddPoint.png</file>
+        <file>res/Circle.png</file>
+        <file>res/Clip.png</file>
+        <file>res/Curve.png</file>
+        <file>res/DeletePoint.png</file>
+        <file>res/Ellipse.png</file>
+        <file>res/Help.png</file>
+        <file>res/Octagon.png</file>
+        <file>res/Open_file.png</file>
+        <file>res/Palette.png</file>
+        <file>res/Purge.png</file>
+        <file>res/Rotate.png</file>
+        <file>res/Save_file.png</file>
+        <file>res/Translate.png</file>
+        <file>res/Trash.png</file>
+        <file>res/Triangle.png</file>
+        <file>res/ZoomIn.png</file>
+        <file>res/ZoomOut.png</file>
+        <file>res/Line.png</file>
+        <file>res/Rectangle.png</file>
+    </qresource>
+</RCC>

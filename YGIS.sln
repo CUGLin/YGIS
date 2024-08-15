@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "YGIS", "YGIS\YGIS.vcxproj", "{73F31FDD-CF9C-4469-A165-A1D2A1A4E9D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73F31FDD-CF9C-4469-A165-A1D2A1A4E9D8}.Debug|x64.ActiveCfg = Debug|x64
+		{73F31FDD-CF9C-4469-A165-A1D2A1A4E9D8}.Debug|x64.Build.0 = Debug|x64
+		{73F31FDD-CF9C-4469-A165-A1D2A1A4E9D8}.Release|x64.ActiveCfg = Release|x64
+		{73F31FDD-CF9C-4469-A165-A1D2A1A4E9D8}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D22E34CB-6ECC-41E3-956F-7679ED226C15}
+	EndGlobalSection
+EndGlobal
